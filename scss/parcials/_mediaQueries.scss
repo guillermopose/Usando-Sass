@@ -1,0 +1,115 @@
+@media (min-width: 1024px){
+    body .divContainerGrid {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr 7fr 80px;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "brazo contenido"
+        "pie pie";
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        nav{
+            padding-top: 20%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50vh 30vh;
+            grid-template-areas: 
+            "links"
+            "cuadro";
+            display: flex;
+            flex-flow: column nowrap;
+            div{
+                height: auto;
+                width: 80%;
+                background-color: rgb(194, 222, 255);
+                color: black;
+                padding: 10px;
+                margin-top: 20%;}
+        }
+    
+    
+    }
+
+
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1023px){
+body .divContainerGrid {
+        width: 100vw;
+        height: 150vh;
+        display: grid;
+        grid-template-areas: 
+        "brazo"
+        "cabeza"
+        "contenido"
+        "pie";
+        grid-template-columns: 100%;
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "links cuadro";
+            div{
+                height: auto;
+                width: 80%;
+                background-color: rgb(194, 222, 255);
+                color: black;
+                margin-top: 20%;
+                padding: 10px;
+                margin-bottom: 20%;}
+        }}
+
+
+
+/*smartphone*/
+@media (max-width: 599px){
+    body .divContainerGrid {
+        width: 100vw;
+        height: 200vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 10fr 50px;
+        grid-template-areas: 
+        "brazo"
+        "cabeza"
+        "contenido"
+        "pie";
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        nav{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30vh 25vh;
+            grid-template-areas: 
+            "links"
+            "cuadro";
+            padding: 20px;
+            
+            div{
+                height: auto;
+                width: 80%;
+                background-color: rgb(194, 222, 255);
+                color: black;
+                padding: 10px;
+                margin: 0px 50px; }}}
+
+        .tituloHeader{
+            padding: 5px;
+            margin: 10px;
+        }
+        main section p{
+            margin-top: 45%;
+        }
+        .gridContainerArticle{
+            display: flex;
+            margin-top: 65%;
+            grid-template-columns: 4fr 1fr;
+            ul{
+                margin-right: 40px;
+        }
+    }}}}

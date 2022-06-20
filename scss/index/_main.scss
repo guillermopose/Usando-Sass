@@ -1,0 +1,73 @@
+
+.divContainerGridIndex main{ 
+        width: 100%;
+        display: flex;
+    section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 30vh;
+    grid-template-areas: 
+    "h2"
+    "p";
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    p{
+        grid-area: p;
+    }
+    h2{
+        grid-area: h2;
+            justify-content: center;
+            align-content: center;
+            background-color: rgb(194, 222, 255);
+            width: auto;
+            text-transform: uppercase;
+    }
+}}
+div nav{
+    background-color: rgb(234, 253, 255);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    ul{
+        grid-area: links;
+        li{
+            list-style-type: none;
+            margin: 5%;
+            padding: 10px 5%;
+            background-color: white;
+            a{
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.462);
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+    div{
+        grid-area: cuadro;
+    }
+
+}
+.gridContainerArticle{
+    display: grid;
+    grid-template-areas: 
+    "lista foto";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30%;
+    justify-content: center;
+    ul{
+        grid-area: lista;
+    }
+    img{
+        grid-area: foto;
+        border: 5px solid rgb(194, 222, 255);
+    }
+    #listaDelMain{
+        width: 30%;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+    }
+}

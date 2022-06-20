@@ -1,0 +1,16 @@
+
+  div{
+    header {
+    grid-area: cabeza;
+  }
+    nav {
+    grid-area: brazo;
+    }
+    main {
+    grid-area: contenido;
+  }
+  } 
+ 
+  footer {
+    grid-area: pie;
+  }

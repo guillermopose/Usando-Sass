@@ -1,0 +1,229 @@
+header {
+  background-image: url(https://media.istockphoto.com/vectors/seamless-stripe-pattern-vector-background-in-sky-blue-and-white-vector-id1150206448?k=20&m=1150206448&s=170667a&w=0&h=cxa13CoOFHDFF7AeBUiheAoGNdukJdD8p3sNjzrNocE=);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header .tituloHeaderContainer {
+  align-items: center;
+  justify-content: center;
+}
+header .tituloHeaderContainer .tituloHeader {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  font-size: x-large;
+  color: black;
+  background-color: rgb(234, 253, 255);
+  border-radius: 5px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.divContainerGridIndex main {
+  width: 100%;
+  display: flex;
+}
+.divContainerGridIndex main section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 30vh;
+  grid-template-areas: "h2" "p";
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.divContainerGridIndex main section p {
+  grid-area: p;
+}
+.divContainerGridIndex main section h2 {
+  grid-area: h2;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(194, 222, 255);
+  width: auto;
+  text-transform: uppercase;
+}
+
+div nav {
+  background-color: rgb(234, 253, 255);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+div nav ul {
+  grid-area: links;
+}
+div nav ul li {
+  list-style-type: none;
+  margin: 5%;
+  padding: 10px 5%;
+  background-color: white;
+}
+div nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.462);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+div nav div {
+  grid-area: cuadro;
+}
+
+.gridContainerArticle {
+  display: grid;
+  grid-template-areas: "lista foto";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 30%;
+  justify-content: center;
+}
+.gridContainerArticle ul {
+  grid-area: lista;
+}
+.gridContainerArticle img {
+  grid-area: foto;
+  border: 5px solid rgb(194, 222, 255);
+}
+.gridContainerArticle #listaDelMain {
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  background-color: rgb(194, 222, 255);
+  height: 5vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+  grid-area: pie;
+}
+
+div header {
+  grid-area: cabeza;
+}
+div nav {
+  grid-area: brazo;
+}
+div main {
+  grid-area: contenido;
+}
+
+footer {
+  grid-area: pie;
+}
+
+@media (min-width: 1024px) {
+  body .divContainerGrid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr 80px;
+    grid-template-areas: "cabeza cabeza" "brazo contenido" "pie pie";
+    color: rgb(0, 0, 0);
+    margin: 5px;
+  }
+  body .divContainerGrid nav {
+    padding-top: 20%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50vh 30vh;
+    grid-template-areas: "links" "cuadro";
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  body .divContainerGrid nav div {
+    height: auto;
+    width: 80%;
+    background-color: rgb(194, 222, 255);
+    color: black;
+    padding: 10px;
+    margin-top: 20%;
+  }
+  /*tablet*/
+}
+@media (min-width: 1024px) and (min-width: 600px) and (max-width: 1023px) {
+  body .divContainerGrid {
+    width: 100vw;
+    height: 150vh;
+    display: grid;
+    grid-template-areas: "brazo" "cabeza" "contenido" "pie";
+    grid-template-columns: 100%;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+  }
+  body .divContainerGrid nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "links cuadro";
+  }
+  body .divContainerGrid nav div {
+    height: auto;
+    width: 80%;
+    background-color: rgb(194, 222, 255);
+    color: black;
+    margin-top: 20%;
+    padding: 10px;
+    margin-bottom: 20%;
+  }
+  /*smartphone*/
+}
+@media (min-width: 1024px) and (min-width: 600px) and (max-width: 1023px) and (max-width: 599px) {
+  body .divContainerGrid {
+    width: 100vw;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 10fr 50px;
+    grid-template-areas: "brazo" "cabeza" "contenido" "pie";
+    color: rgb(0, 0, 0);
+    margin: 5px;
+  }
+  body .divContainerGrid nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 25vh;
+    grid-template-areas: "links" "cuadro";
+    padding: 20px;
+  }
+  body .divContainerGrid nav div {
+    height: auto;
+    width: 80%;
+    background-color: rgb(194, 222, 255);
+    color: black;
+    padding: 10px;
+    margin: 0px 50px;
+  }
+  .tituloHeader {
+    padding: 5px;
+    margin: 10px;
+  }
+  main section p {
+    margin-top: 45%;
+  }
+  .gridContainerArticle {
+    display: flex;
+    margin-top: 65%;
+    grid-template-columns: 4fr 1fr;
+  }
+  .gridContainerArticle ul {
+    margin-right: 40px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=destino.css.map */

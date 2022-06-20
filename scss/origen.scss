@@ -1,0 +1,12 @@
+
+@import "../scss/index/header";
+@import "../scss/index/main";
+@import "../scss/index/footer";
+@import "../scss/index/grid";
+@import "../scss/parcials/mediaQueries";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
